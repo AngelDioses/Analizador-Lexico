@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador Léxico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="analizador()">
+    <header>
+        <h1>Analizador Léxico</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="column">
+                <textarea id="codigo" rows="10" cols="50" placeholder="Ingresa tu código aquí"></textarea>
+                <button onclick="analizador()">Analizar</button>
+            </div>
+            <div class="column">
+                <div class="table-wrapper">
+                    <table id="table" class="fl-table">
+                        <thead>
+                            <tr>
+                                <th>Componente léxico</th>
+                            </tr>
+                        </thead>
+                        <tbody id="componente-lexico-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="column">
+                <div class="table-wrapper">
+                    <table id="tabla-conteo" class="fl-table">
+                        <thead>
+                            <tr>
+                                <th>Componente Léxico</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody id="lexema-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p> Grupo 1</p>
+    </footer>
+    <script src="scanner.js" type="text/javascript"></script>
+</body>
+</html>
