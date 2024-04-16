@@ -28,13 +28,13 @@ Esta función analiza una línea del código fuente y clasifica los diferentes c
 
 ### Eventos DOM
 
--Se utiliza el evento onload en el body para llamar a la función `analizador()` cuando se carga la página.
--Se utiliza el evento onclick en el botón `Analizar` para llamar a la función `analizador()` cuando se hace clic en él.
+- Se utiliza el evento onload en el body para llamar a la función `analizador()` cuando se carga la página.
+- Se utiliza el evento onclick en el botón `Analizar` para llamar a la función `analizador()` cuando se hace clic en él.
 
 ## Código
 
 index.html
-```
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -90,7 +90,7 @@ index.html
 </html>
 ```
 scanner.js
-```
+```js
 function analizador() {
     const codigo = document.getElementById('codigo').value;
     const tabla = document.getElementById('table');
@@ -244,7 +244,7 @@ function actualizarTablaConteo() {
 ```
 
 styles.css
-```
+```css
 /* Reset de estilos */
 * {
     margin: 0;
