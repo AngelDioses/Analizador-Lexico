@@ -104,7 +104,7 @@ function analizarLinea(row, tabla) {
         } else if (part === 'return') { 
             agregarFila(tabla, "Palabra Reservada", part);
         } else if (part.match(identificadorRegex)) {
-            // Verificar si la palabra ya ha sido clasificada como una función
+            // Verificar si la palabra ya ha sido clasificada como una funcion
             const filas = tabla.querySelectorAll('tr');
             const funciones = Array.from(filas).filter(fila => fila.cells[0].innerText === "Funcion").map(fila => fila.cells[1].innerText);
             if (!funciones.includes(part)) {
