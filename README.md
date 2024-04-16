@@ -28,9 +28,10 @@ Esta función analiza una línea del código fuente y clasifica los diferentes c
 
 ### Eventos DOM
 
+$$
 \begin{itemize}
 \item Se utiliza el evento onload en el body para llamar a la función `analizador()` cuando se carga la página.
 \item Se utiliza el evento onclick en el botón `Analizar` para llamar a la función `analizador()` cuando se hace clic en él.
 \end{itemize}
-
+$$
 
