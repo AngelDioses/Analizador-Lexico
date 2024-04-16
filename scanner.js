@@ -99,6 +99,10 @@ function analizarLinea(row, tabla) {
             agregarFila(tabla, "Operador Ternario", part);
         } else if (operadoresPunteroDireccion.includes(part)) {
             agregarFila(tabla, "Operador de Puntero/Dirección", part);
+        } else if (part === 'printf') { 
+            agregarFila(tabla, "Palabra Reservada", part);
+        } else if (part === 'return') { 
+            agregarFila(tabla, "Palabra Reservada", part);
         } else if (part.match(identificadorRegex)) {
             // Verificar si la palabra ya ha sido clasificada como una función
             const filas = tabla.querySelectorAll('tr');
